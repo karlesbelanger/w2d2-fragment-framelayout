@@ -19,13 +19,21 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mButton = (Button) findViewById(R.id.a_main_button);
+       /* mButton = (Button) findViewById(R.id.a_main_button);
         mFrameLayout = (FrameLayout) findViewById(R.id.a_main_frame);
-
+*/
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager
                 .beginTransaction()
                 .add(R.id.a_main_frame, new BlankFragment())
+                .commit();
+        fragmentManager
+                .beginTransaction()
+                .add(R.id.a_main_frame1, new BlankFragment())
+                .commit();
+        fragmentManager
+                .beginTransaction()
+                .add(R.id.a_main_frame2, new BlankFragment())
                 .commit();
 
     }

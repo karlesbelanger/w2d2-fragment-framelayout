@@ -12,6 +12,7 @@
 
     <Button
         android:id="@+id/f_blank_btn"
+        android:text="Frag Out Button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
